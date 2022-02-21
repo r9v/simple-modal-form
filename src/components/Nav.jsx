@@ -36,13 +36,13 @@ export const Nav = () => {
         justify-content: space-between;
         align-items: center;
         position: ${atTop ? "absolute" : "fixed"};
-        height: ${!atTop && theme.navbarMobileHeight};
+        height: ${theme.navbarMobileHeight};
         top: ${atTop || !hidden ? 0 : `calc(-1 * ${theme.navbarMobileHeight})`};
         left: 0;
         right: 0;
         width: 100%;
         z-index: 3;
-        padding: ${!hidden ? "10px 26px" : undefined};
+        padding: 10px 26px;
         transition: ${theme.defaultTransition};
         background-color: ${atTop && !menuOpen
           ? undefined
@@ -54,7 +54,7 @@ export const Nav = () => {
 
         @media (min-width: 1280px) {
           height: ${theme.navbarHeight};
-          top: 0;
+          top: ${atTop || !hidden ? 0 : `calc(-1 * ${theme.navbarHeight})`};
           padding: 10px 80px 10px 90px;
         }
         @media (min-width: 1440px) {
