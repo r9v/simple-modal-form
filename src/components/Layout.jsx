@@ -20,16 +20,7 @@ const theme = {
   buttonTransition: "all 0.2s ease-out",
   defaultBorderRadius: "30px",
 };
-const foo = `
-${theme.colors.light}
-${theme.colors.primary}
-${theme.navbarMobileHeight}
-${theme.navbarHeight}
-${theme.defaultTransition}
-${theme.buttonTransition}
-${theme.defaultBorderRadius}
 
-`;
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
