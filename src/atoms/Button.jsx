@@ -6,6 +6,7 @@ export const Button = ({ onClick = () => {}, children }) => {
 
   return (
     <button
+      onClick={onClick}
       css={css`
         display: inline-flex;
         flex-direction: row;
@@ -31,23 +32,6 @@ export const Button = ({ onClick = () => {}, children }) => {
         `}
       >
         {children}
-      </span>
-      <span
-        css={css`
-          color: ${theme.colors.additional};
-          display: inline-block;
-          font-family: ${theme.secondaryFont};
-          font-weight: 700;
-          font-size: 22px;
-          line-height: 18px;
-          @media (min-width: 1440px) {
-            font-size: 25px;
-            line-height: 20px;
-            padding-top: 2px;
-          }
-        `}
-      >
-        &nbsp;{" >"}
       </span>
     </button>
   );

@@ -1,5 +1,7 @@
-Demo company portfolio.
+Simple modal form demo.
 
-Deployed to https://company-portfolio-554f5f7e-591.herokuapp.com/
+Deployed to
 
-Made with [Gatsby](https://www.gatsbyjs.com/) and React styled with [Emotion](https://emotion.sh/docs/introduction)
+Made with [Gatsby](https://www.gatsbyjs.com/), [React](https://reactjs.org/), [Formik](https://formik.org/), [Yup](https://github.com/jquense/yup) and [react-toastify](https://fkhadra.github.io/react-toastify/introduction)
+
+Styled with [Emotion](https://emotion.sh/docs/introduction)

@@ -5,16 +5,11 @@ const theme = {
   colors: {
     primary: "#141a52",
     light: "white",
-    secondary: "#4d57fb",
-    additional: "#06df77",
-    nonactive: "#6b70a4",
-    lightGray: "#fbfbfb",
-    projectGray: "#e7ebed",
-    serviceGray: "#f3f2f5",
-    portfolioGray: "#f6f6f6",
+    lightGray: "#f2f2f2",
+    gray: "#fefefe",
+    darkGray: "#949494",
+    errorRed: "#D32F2F",
   },
-  navbarHeight: "100px",
-  navbarMobileHeight: "80px",
   secondaryFont: "DM-Sans",
   defaultTransition: "all 0.2s ease-in-out",
   buttonTransition: "all 0.2s ease-out",
@@ -73,6 +68,7 @@ const Layout = ({ children }) => {
             font-display: block;
             font-family: Avenir;
             font-weight: 500;
+            font-size: 12px;
           }
           a {
             text-decoration: none;
@@ -82,6 +78,10 @@ const Layout = ({ children }) => {
             display: block;
             margin-top: 10px;
             content: "";
+          }
+          input {
+            margin: 0;
+            font-size: 12px;
           }
         `}
       />
